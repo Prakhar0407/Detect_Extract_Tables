@@ -1,0 +1,141 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #181b27;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  background: #212437;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(72, 202, 228, 0.4);
+  text-align: center;
+}
+
+/* Title */
+.app-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #48cae4;
+  margin-bottom: 20px;
+}
+
+/* Dropzone */
+.dropzone {
+  border: 2px dashed #48cae4;
+  padding: 40px;
+  background-color: #292d42;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+}
+
+.dropzone:hover {
+  background-color: #343b5a;
+  border-color: #00a8e8;
+}
+
+/* File Selected */
+.file-selected {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #4ef037;
+}
+
+/* Buttons */
+.btn-upload {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #48cae4, #00a8e8);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-upload:disabled {
+  background: #555b75;
+  cursor: not-allowed;
+}
+
+.btn-upload:hover:not(:disabled) {
+  background: linear-gradient(135deg, #00a8e8, #0077b6);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 168, 232, 0.6);
+}
+
+/* Table */
+.table-container {
+  margin-top: 30px;
+  background-color: #292d42;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #4b5d67;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #0077b6;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #343b5a;
+}
+
+/* Download Button */
+.btn-download {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #4ef037;
+  color: black;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-download:hover {
+  background: #3dbf29;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #b2bec3;
+}
