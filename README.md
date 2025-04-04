@@ -1,97 +1,87 @@
-# PDF to Excel Extractor
+# 📄 PDF to Excel Extractor
 
-## 📌 Project Overview
+Transform PDFs into structured Excel data effortlessly! 🚀  
 
-PDF to Excel Extractor is a web application that allows users to upload PDF files and extract structured table data into an Excel spreadsheet.
+---
 
-## 🚀 Features
+## 🌟 Overview  
 
-- 📂 **Upload PDFs** via drag-and-drop or file selection.
-- 🏆 **Extract Table Data** from structured PDFs using regex.
-- 📊 **Generate and Download Excel Files** with extracted data.
-- 🎨 **Dark Mode Support** for a better user experience.
+PDF to Excel Extractor is a web-based tool that enables users to **upload PDF files** and **extract table data** into an Excel spreadsheet with just a few clicks.  
 
-## 🛠️ Tech Stack
+---
 
-### Frontend:
+## 🎯 Key Features  
 
-- React.js
-- Bootstrap
-- Axios
-- React Dropzone
+✅ **Drag & Drop Upload** – Easily select PDFs using drag-and-drop or file browsing.  
+✅ **Table Data Extraction** – Smart regex-powered extraction for structured tables.  
+✅ **Excel File Generation** – Download extracted tables as `.xlsx` files.  
+✅ **Dark Mode UI** – Sleek and modern interface with dark mode support.  
 
-### Backend:
+---
 
-- Express.js
-- Multer (File Uploads)
-- PDF-Parse (Text Extraction)
-- pdf2pic (PDF to Image Conversion)
-- XLSX (Excel File Generation)
-- CORS (Cross-Origin Requests)
+## 🛠 Tech Stack  
 
-## 📂 Project Structure
+### **Frontend (React)**  
+⚡ React.js | 🔄 Axios | 📁 React Dropzone  
+
+### **Backend (Express.js)**  
+🛠 Express.js | 📖 PDF-Parse | 🖼 pdf2pic | 📊 XLSX | 🌍 CORS  
+
+---
+
+## 📁 Project Structure  
 
 ```
-📦 pdf-to-excel-extractor
-├── frontend (React App)
-│   ├── src
-│   │   ├── App.js
-│   │   
-│   │  
-│   ├── public
-│   ├── package.json
+📂 pdf-to-excel-extractor
+├── frontend/         # React App (Frontend)
+│   ├── src/         # Source Files
+│   │   ├── App.js   # Main React Component
+│   │   ├── styles/  # CSS Files
+│   ├── public/      # Static Assets
+│   ├── package.json # Dependencies
 │   └── ...
-├── backend (Express Server)
-│   ├── server.js
-│   ├── uploads/ (Temporary file storage)
-│   ├── package.json
+├── backend/         # Express.js API Server
+│   ├── server.js    # Backend Logic
+│   ├── uploads/     # Temporary File Storage
+│   ├── package.json # Dependencies
 │   └── ...
-├── README.md
-└── .gitignore
+├── README.md        # Documentation
+└── .gitignore       # Ignored Files
 ```
 
-## 🖥️ Installation and Setup
+---
 
-### Prerequisites:
+## 🏗 Installation & Setup  
 
-- Node.js installed on your system
-- npm or yarn installed
-
-### 🔧 Setup Backend
-
+### **1️⃣ Backend Setup**  
 ```sh
 cd backend
 npm install
 node server.js
 ```
+🚀 Backend will run at `http://localhost:5000`  
 
-The backend will start at `http://localhost:5000`.
-
-### 🎨 Setup Frontend
-
+### **2️⃣ Frontend Setup**  
 ```sh
 cd frontend
 npm install
 npm start
 ```
+🌐 Frontend available at `http://localhost:3000`  
 
-The frontend will be available at `http://localhost:3000`.
+---
 
-## 📜 API Endpoints
+## 📡 API Endpoints  
 
-### `POST /upload`
+### **`POST /upload`**  
+- **Description:** Uploads a PDF file, extracts table data, and generates an Excel file.  
+- **Request:** `multipart/form-data` with `pdf` as the file field.  
+- **Response:** JSON containing extracted data and a download URL.  
 
-- **Description:** Uploads a PDF file, extracts table data, and generates an Excel file.
-- **Request:** `multipart/form-data` with `pdf` as the file field.
-- **Response:** JSON containing extracted data and a download URL.
+### **`GET /download/:filename`**  
+- **Description:** Downloads the generated Excel file.  
+- **Response:** File download.  
 
-### `GET /download/:filename`
+---
 
-- **Description:** Downloads the generated Excel file.
-- **Response:** File download.
-
-## 📸 Screenshots
-
-
-
-
+### ⭐ **Like this project? Give it a star on GitHub!** ⭐
